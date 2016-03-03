@@ -156,7 +156,7 @@ gulp.task('browser-sync', ['index', 'nodemon'], function() {
 
 ### Conclusion
 
-Hope you all taken something away from this post, if you have any remarks / comments, feel free to [contact me on twitter](https://twitter.com/denbuzze).
+Hope you all taken something away from this post, if you have any remarks / comments, feel free to [contact me on twitter](https://twitter.com/christianvuer).
 
 [bower]: http://bower.io/
 [browsersync]: http://www.browsersync.io/
@@ -166,10 +166,3 @@ Hope you all taken something away from this post, if you have any remarks / comm
 [main-bower-files]: https://github.com/ck86/main-bower-files
 [nodemon]: https://github.com/remy/nodemon
 [run-sequence]: https://github.com/OverZealous/run-sequence
-
-
-
-
-
-
-

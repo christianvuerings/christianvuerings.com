@@ -8,14 +8,14 @@ Lately I've been developing jQuery plug-ins in my spare time. Definitely
 go and check out
 the [example](http://christianv.github.com/jquery-lifestream/example.html)
 [pages](http://christianv.github.com/jquery-favicons/example.html).
-One of the main reasons for doing this is to get a grip of the latest API 
+One of the main reasons for doing this is to get a grip of the latest API
 changes in jQuery.
 
 ###Plug-ins
 
 * [jQuery Favicons](http://christianv.github.com/jquery-favicons/) - Add
 favicons to anchor elements on your page.
-* [jQuery Lifestream](http://christianv.github.com/jquery-lifestream/) - Show 
+* [jQuery Lifestream](http://christianv.github.com/jquery-lifestream/) - Show
 a stream of your online activity with jQuery.
 
 ###Things I've learned
@@ -38,7 +38,7 @@ $("#lifestream").lifestream({
   "list":[
     {
       "service": "twitter",
-      "user": "denbuzze"
+      "user": "christianvuerings"
     }
   ]
 });

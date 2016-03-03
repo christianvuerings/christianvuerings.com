@@ -1,6 +1,6 @@
-# About [![Dependency Status](https://gemnasium.com/denbuzze/denbuzze.github.com.svg)](https://gemnasium.com/denbuzze/denbuzze.github.com)
+# About [![Dependency Status](https://gemnasium.com/christianvuerings/christianvuerings.com.svg)](https://gemnasium.com/christianvuerings/christianvuerings.com)
 
-Source code of [http://denbuzze.com](http://denbuzze.com).
+Source code of [http://christianvuerings.com](http://christianvuerings.com). (Formerly denbuzze.com)
 
 This is made possible by using [Github Pages](http://pages.github.com) & the static site generator [Jekyll](https://github.com/mojombo/jekyll).
 

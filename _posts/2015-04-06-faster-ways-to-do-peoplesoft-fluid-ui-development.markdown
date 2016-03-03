@@ -33,7 +33,7 @@ The main plug-in we'll be using is called [Tampermonkey][Tampermonkey] (Google C
 {% highlight javascript %}
 // ==UserScript==
 // @name         Fluid UI Custom
-// @namespace    denbuzze
+// @namespace    christianvuerings
 // @version      0.1
 // @description  Load local JavaScript and CSS
 // @author       Christian Vuerings
@@ -92,7 +92,7 @@ These are a couple of things we're currently dreaming of:
 
 We should always use the best tool for the job and being productive as a developer should be an important focus.
 
-I hope you'll be able to use this in your daily development workflow and if you have any remarks / comments, feel free to [contact me on twitter](https://twitter.com/denbuzze).
+I hope you'll be able to use this in your daily development workflow and if you have any remarks / comments, feel free to [contact me on twitter](https://twitter.com/christianvuer).
 
 [browsersync]: http://www.browsersync.io/
 [Greasemonkey]: https://addons.mozilla.org/en-Us/firefox/addon/greasemonkey/
