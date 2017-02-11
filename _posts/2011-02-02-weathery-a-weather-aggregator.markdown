@@ -11,7 +11,7 @@ If you do this yourself, you usually have to check several websites. Each websit
 
 ### Weathery
 
-[Weathery](http://christianv.github.com/weathery/) is a web scraper that retrieves useful weather information from several sites. At this very moment it only gets the information for one specific place in Belgium, Koksijde.
+[Weathery](https://christianvuerings.github.io/weathery/) is a web scraper that retrieves useful weather information from several sites. At this very moment it only gets the information for one specific place in Belgium, Koksijde.
 
 [![Screenshot of weathery](/img/2011-02-02-weathery_small.png)](//img/2011-02-02-weathery_big.png)
 

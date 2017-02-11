@@ -9,11 +9,11 @@ Some Sakai3 front-end developers had a dream:
 
 > For our widget loading mechanism we want to load the HTML / CSS and JavaScript in one request (without asking the user to use inline CSS or JavaScript)
 
-It felt like quite a big challenge and I wondered if it would be possible from a front-end point of view or not. So I [gave it a go](http://christianv.github.com/everythingatonce/index.html).
+It felt like quite a big challenge and I wondered if it would be possible from a front-end point of view or not. So I [gave it a go](https://christianv.github.com/everythingatonce/index.html).
 
 ### What we need from the back-end
 
-In Nakamura (the Sakai3 back-end) we are using [Apache Sling](http://sling.apache.org/site/index.html) in combination with [Apache Jackrabbit](http://jackrabbit.apache.org/). Which means that when we go to a URL like twitter.2.json we get information back about the structure of it's contents:
+In Nakamura (the Sakai3 back-end) we are using [Apache Sling](https://sling.apache.org/site/index.html) in combination with [Apache Jackrabbit](https://jackrabbit.apache.org/). Which means that when we go to a URL like twitter.2.json we get information back about the structure of it's contents:
 
 
 {% highlight javascript %}
@@ -111,7 +111,7 @@ The Sakai3 widget process goes a bit deeper:
 5. Add the widget HTML to the container on the Sakai3 page.
 6. Load the CSS and JavaScript dynamically without doing an extra request.
 
-So instead of doing a request to an [HTML file](http://christianv.github.com/everythingatonce/loaded.html), a [CSS file](http://christianv.github.com/everythingatonce/css/loaded.css) and a [JavaScript file](http://christianv.github.com/everythingatonce/javascript/loaded.js), we would just make one request to a [JSON file](http://christianv.github.com/everythingatonce/json/widget.json).
+So instead of doing a request to an [HTML file](https://christianvuerings.github.io/everythingatonce/loaded.html), a [CSS file](https://christianvuerings.github.io/everythingatonce/css/loaded.css) and a [JavaScript file](https://christianvuerings.github.io/everythingatonce/javascript/loaded.js), we would just make one request to a [JSON file](https://christianvuerings.github.io/everythingatonce/json/widget.json).
 
 [![Doing the requests separately](/img/2010-04-25-perf1.png)](/img/2010-04-25-perf1_b.png)
 
@@ -122,9 +122,9 @@ vs.
 
 Too be honest I got everything working quite fast (+/- 1,5 hour) but it took a bit longer to make everything cross-browser. Especially the last part, loading the JavaScript and CSS dynamically.
 
-I knew jQuery just recently added the [$.getScript](http://api.jquery.com/jQuery.getScript/) but that added an extra Ajax call which I wanted to avoid in the first place. After lurking through the jQuery API and [source code](http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js), I found out that the [$.globalEval](http://api.jquery.com/jQuery.globalEval/) function did exactly what I wanted for the JavaScript part.
+I knew jQuery just recently added the [$.getScript](https://api.jquery.com/jQuery.getScript/) but that added an extra Ajax call which I wanted to avoid in the first place. After lurking through the jQuery API and [source code](https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.js), I found out that the [$.globalEval](https://api.jquery.com/jQuery.globalEval/) function did exactly what I wanted for the JavaScript part.
 
-Maybe I didn't look well enough, but I actually couldn't find any native jQuery method that would load the CSS dynamically. So I wrote something that is heavily based on [a post](http://www.phpied.com/dynamic-script-and-style-elements-in-ie/) by [Stoyan Stephanov](http://www.phpied.com/):
+Maybe I didn't look well enough, but I actually couldn't find any native jQuery method that would load the CSS dynamically. So I wrote something that is heavily based on [a post](https://www.phpied.com/dynamic-script-and-style-elements-in-ie/) by [Stoyan Stephanov](https://www.phpied.com/):
 
 {% highlight javascript %}
 var head = document.getElementsByTagName('head').item(0);

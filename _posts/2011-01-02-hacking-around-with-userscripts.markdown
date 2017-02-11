@@ -17,13 +17,13 @@ Of course you could think of many more things, the list is literately endless.
 
 ### My scripts
 
-#### [The Piratebay Ad Remover](http://userscripts.org/scripts/show/89761)
+#### [The Piratebay Ad Remover](https://userscripts.org/scripts/show/89761)
 
-My most popular script so far is an ad remover for [thepiratebay.org](http://thepiratebay.org/). The first version of the script was launched on the 5th of November 2010 and has had 320 downloads so far.
+My most popular script so far is an ad remover for [thepiratebay.org](https://thepiratebay.org/). The first version of the script was launched on the 5th of November 2010 and has had 320 downloads so far.
 
 #### [Ted.com Alternative Video Player](http://userscripts.org/scripts/show/93984)
 
-When looking at talks on [ted.com](http://www.ted.com/), the default flash player always annoyed me. The full screen button didn't work and seeking through the video was buggy. Apart from that, when you go full screen, you still had the flash player controls on the top and bottom of the screen. As an alternative, I wanted to use the open-source [JW Player](http://www.longtailvideo.com/).
+When looking at talks on [ted.com](https://www.ted.com/), the default flash player always annoyed me. The full screen button didn't work and seeking through the video was buggy. Apart from that, when you go full screen, you still had the flash player controls on the top and bottom of the screen. As an alternative, I wanted to use the open-source [JW Player](https://www.jwplayer.com/).
 
 #### [mflow Keyboard Shortcuts](http://userscripts.org/scripts/show/93041)
 
@@ -45,7 +45,7 @@ If you want to make sure that your script also runs in Google Chrome, do the fol
 
 #### @match attribute
 
-Next to the @include attribute, also use the [@match attribute](http://www.chromium.org/developers/design-documents/user-scripts#TOC-Match-Patterns). This will make sure that the user who install the userscript will get an appropriate message:
+Next to the @include attribute, also use the [@match attribute](https://www.chromium.org/developers/design-documents/user-scripts#TOC-Match-Patterns). This will make sure that the user who install the userscript will get an appropriate message:
 
 
 #### Don't use the @require attribute.
@@ -58,4 +58,4 @@ Greasemonkey allows you to access global JavaScript variables through this varia
 
 #### More information
 
-You can find more information about userscripts in google chrome on the [chromium userscripts page](http://www.chromium.org/developers/design-documents/user-scripts).
+You can find more information about userscripts in google chrome on the [chromium userscripts page](https://www.chromium.org/developers/design-documents/user-scripts).

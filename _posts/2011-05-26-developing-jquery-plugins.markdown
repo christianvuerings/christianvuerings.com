@@ -6,16 +6,16 @@ tags:
 ---
 Lately I've been developing jQuery plug-ins in my spare time. Definitely
 go and check out
-the [example](http://christianv.github.com/jquery-lifestream/example.html)
-[pages](http://christianv.github.com/jquery-favicons/example.html).
+the [example](https://christianvuerings.github.io/jquery-lifestream/example.html)
+[pages](https://christianvuerings.github.io/jquery-favicons/example.html).
 One of the main reasons for doing this is to get a grip of the latest API
 changes in jQuery.
 
 ###Plug-ins
 
-* [jQuery Favicons](http://christianv.github.com/jquery-favicons/) - Add
+* [jQuery Favicons](https://christianvuerings.github.io/jquery-favicons/) - Add
 favicons to anchor elements on your page.
-* [jQuery Lifestream](http://christianv.github.com/jquery-lifestream/) - Show
+* [jQuery Lifestream](https://christianvuerings.github.io/jquery-lifestream/) - Show
 a stream of your online activity with jQuery.
 
 ###Things I've learned
@@ -54,4 +54,4 @@ $.fn.lifestream.feeds.lastfm = function(obj, callback){
 {% endhighlight %}
 
 A great resource is the
-[jQuery authoring guide](http://docs.jquery.com/Plugins/Authoring).
+[jQuery authoring guide](https://docs.jquery.com/Plugins/Authoring).

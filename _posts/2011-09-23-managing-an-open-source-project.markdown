@@ -4,7 +4,7 @@ title: Managing an Open-source Project
 tags:
 - development
 ---
-As some of you may know, over the last couple of months I've been working & managing a project called [jQuery Lifestream](http://github.com/christianv/jquery-lifestream).
+As some of you may know, over the last couple of months I've been working & managing a project called [jQuery Lifestream](https://github.com/christianvuerings/jquery-lifestream).
 It isn't always that easy and there are just some of the things I've learned along the way.
 
 ###Market your product

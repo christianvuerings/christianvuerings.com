@@ -12,11 +12,11 @@ The moment just after New Year is always a good time to reflect back on the prev
 2010 was a great year for me. I was able to work at [Caret](http://www.caret.cam.ac.uk/page/home), which is part of the University of Cambridge. My main task was to work on [Sakai OAE](http://sakaiproject.org/node/2239), which is an online learning environment.
 
 One of the major things I liked about the project is that is was completely open. Everybody can get the project for free, use it themselves and modify if necessary.
-Near the end of my stay at Caret, I attended and even presented (many thanks to [Lance Speelmon](http://lancespeelmon.wordpress.com/)) at the [2010 Sakai conference](http://eventbrainz.com/events/home/event_id/61) in Denver. It was an amazing experience and it felt great to actually meet the people in real life. I worked with quite a lot of them on-line, but never actually saw them.
+Near the end of my stay at Caret, I attended and even presented (many thanks to [Lance Speelmon](https://lancespeelmon.wordpress.com/)) at the [2010 Sakai conference](https://eventbrainz.com/events/home/event_id/61) in Denver. It was an amazing experience and it felt great to actually meet the people in real life. I worked with quite a lot of them on-line, but never actually saw them.
 
 ### University College Ghent
 
-This was probably the hardest decision I had to make in 2010. To decide whether I would go back to study or not is a big deal. But having worked for over a year I decided to study again. Currently I'm studying to become an industrial engineer in informatics at the [University College Ghent](http://english.hogent.be/). It's a difficult course though, so lets work hard and hope for the best!
+This was probably the hardest decision I had to make in 2010. To decide whether I would go back to study or not is a big deal. But having worked for over a year I decided to study again. Currently I'm studying to become an industrial engineer in informatics at the [University College Ghent](https://www.hogent.be/en/). It's a difficult course though, so lets work hard and hope for the best!
 
 ### Sailing
 
