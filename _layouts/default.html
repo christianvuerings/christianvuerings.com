@@ -13,15 +13,19 @@
 
   <title>{{ page.title }} - Christian Vuerings</title>
 </head>
-<body>
+<body class="body">
 
-  {% include header.html %}
+  <div class="header">
+    {% include header.html %}
+  </div>
 
-  <div>
+  <div class="content-container">
     {{ content }}
   </div>
 
-  {% include footer.html %}
+  <div class="footer">
+    {% include footer.html %}
+  </div>
 
   <script>
     var _gaq=[['_setAccount','UA-190225-7'],['_trackPageview'],['_trackPageLoadTime']];

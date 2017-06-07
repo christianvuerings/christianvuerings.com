@@ -2,9 +2,16 @@
 img{border:0; max-width:100%;}
 h1,h2,h3,h4 {font-weight:bold}
 
-body{
+html {
+  height: 100%;
+}
+
+.body {
   color:#444;
+  display: flex;
+  flex-direction: column;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",  sans-serif;
+  height: 100%;
   line-height: 1.6;
 }
 
@@ -26,19 +33,19 @@ pre { overflow: auto; }
 .visuallyhidden.focusable:focus { clip: auto;height: auto;margin: 0;overflow: visible;position: static;width: auto;}
 
 /* header */
-#header a {
+.header a {
   padding: 5px 20px;
   display: block;
 }
-#header, #footer {
+.header, .footer {
   background-color: #293139;
   width: auto;
 }
-#header a, #footer a {border: none; color: #fff;}
+.header a, .footer a {border: none; color: #fff;}
 
-#header h1, #footer ul {
+.header h1, .footer ul {
   margin: 0 auto;
-  max-width: 680px;
+  max-width: 780px;
   width: auto;
 }
 
@@ -51,18 +58,18 @@ pre { overflow: auto; }
   padding: 20px;
   font-size: 35px;
   margin: 0 auto;
-  max-width: 680px;
-}
-.post-header a {
-
+  max-width: 780px;
 }
 
 /* content */
+.content-container {
+  margin-bottom: auto;
+}
 .content {
   background: #fff;
   padding: 0 20px;
   margin: 0 auto;
-  max-width: 680px;
+  max-width: 780px;
 }
 
 /* post */
@@ -83,35 +90,34 @@ pre { overflow: auto; }
 .twitterbutton a:active {background-position:0 -40px;}
 
 /* posts */
-.posts {margin-bottom: 40px;}
 .posts a {position: relative;}
 .posts span {}
 
 /* footer */
-#footer {
+.footer {
   margin-top: 40px;
 }
-#footer ul {
+.footer ul {
   height: 70px;
   position: relative;
   width: 270px;
 }
-#footer ul li { display: inline;}
-#footer ul li a {
+.footer ul li { display: inline;}
+.footer ul li a {
   background: url("/img/footer_logos.png") no-repeat 0 0;
   display: block;
   float: left;
   height: 70px;
   width: 90px;
 }
-#footer .twitter a:hover {background-position:0 -70px;}
-#footer .twitter a:active {background-position:0 -140px;}
-#footer .github a {background-position: -90px 0;}
-#footer .github a:hover {background-position: -90px -70px;}
-#footer .github a:active {background-position: -90px -140px;}
-#footer .linkedin a {background-position: -180px 0;}
-#footer .linkedin a:hover {background-position: -180px -70px;}
-#footer .linkedin a:active {background-position: -180px -140px;}
+.footer .twitter a:hover {background-position:0 -70px;}
+.footer .twitter a:active {background-position:0 -140px;}
+.footer .github a {background-position: -90px 0;}
+.footer .github a:hover {background-position: -90px -70px;}
+.footer .github a:active {background-position: -90px -140px;}
+.footer .linkedin a {background-position: -180px 0;}
+.footer .linkedin a:hover {background-position: -180px -70px;}
+.footer .linkedin a:active {background-position: -180px -140px;}
 
 /* Highlight styles */
 .highlight {

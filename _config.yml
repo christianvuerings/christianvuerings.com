@@ -1,4 +1,6 @@
 markdown: kramdown
+gems:
+  - octopress-autoprefixer
 highlighter: rouge
 permalink: /post/:title
 url: http://christianvuerings.com
