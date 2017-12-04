@@ -10,7 +10,10 @@ layout: default
     {{ content }}
   </div>
 
-  <div class="twitterbutton ir">
-    <a href="https://twitter.com/share?original_referer={{ site.url }}{{ page.url }}&amp;url={{ site.url }}{{ page.url }}&amp;text={{ page.title | replace: "&", "%26" }}&amp;via=christianvuerings" target="_blank">Tweet</a>
+  <div class="twitterbutton">
+    <a class="defaultlink" href="https://twitter.com/share?original_referer={{ site.url }}{{ page.url }}&amp;url={{ site.url }}{{ page.url }}&amp;text={{ page.title | replace: "&", "%26" }}&amp;via=christianvuerings" target="_blank">
+      <i></i>
+      <span class="twitterlabel">Tweet</span>
+    </a>
   </div>
 </div>
