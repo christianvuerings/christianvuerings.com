@@ -108,7 +108,6 @@ class BlogPostTemplate extends React.Component {
     const siteTitle = this.props.data.site.siteMetadata.title;
 
     const { location } = this.props;
-    console.log(this.props);
     const completePath = `${location.origin}${location.pathname}`;
     const twitterURL = `https://twitter.com/share?original_referer=${completePath}&amp;url=${completePath}&amp;text=${post.frontmatter.title.replace(
       '&',
