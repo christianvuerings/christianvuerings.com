@@ -5,5 +5,11 @@ Forked from [gatsby-starter-blog](https://github.com/gatsbyjs/gatsby-starter-blo
 
 ## Quick start
 
-* `yarn start`
-* Go to [http://localhost:8000/](http://localhost:8000/)
+### Develop locally
+
+- `yarn dev`
+- Go to [http://localhost:8000/](http://localhost:8000/)
+
+### Deploy
+
+- `yarn deploy`
