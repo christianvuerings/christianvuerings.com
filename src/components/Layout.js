@@ -25,8 +25,6 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     color: #444;
-    display: flex;
-    flex-direction: column;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
       "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
       sans-serif;
@@ -211,7 +209,7 @@ const HeaderLink = styled(Link)`
 `;
 
 const Footer = styled.footer`
-  margin: 50px auto 0;
+  margin: 0 auto;
   max-width: 780px;
 `;
 
@@ -247,8 +245,15 @@ const FooterItem = styled.li`
   }
 `;
 
-const MainContainer = styled.div`
-  margin: 0 auto auto;
+const Main = styled.div`
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+`;
+
+const Content = styled.div`
+  flex: 1;
+  margin: 0 auto 25px;
   max-width: 780px;
   padding: 0 20px;
 `;
@@ -278,30 +283,32 @@ class Layout extends React.Component {
     return (
       <React.Fragment>
         <GlobalStyle />
-        <DarkContainer>
-          <Heading>
-            <HeaderLink to={`/`}>{title}</HeaderLink>
-          </Heading>
-        </DarkContainer>
-        <MainContainer>{children}</MainContainer>
-        <DarkContainer>
-          <Footer>
-            <div className="vcard">
-              <VisuallyHidden>
-                <h2>Contact details</h2>
-              </VisuallyHidden>
-              <FooterList>
-                {footerLinks.map(({ href, title, text }) => (
-                  <FooterItem key={href}>
-                    <FooterLink href={href} title={title} target="_blank">
-                      {text}
-                    </FooterLink>
-                  </FooterItem>
-                ))}
-              </FooterList>
-            </div>
-          </Footer>
-        </DarkContainer>
+        <Main>
+          <DarkContainer>
+            <Heading>
+              <HeaderLink to={`/`}>{title}</HeaderLink>
+            </Heading>
+          </DarkContainer>
+          <Content>{children}</Content>
+          <DarkContainer>
+            <Footer>
+              <div className="vcard">
+                <VisuallyHidden>
+                  <h2>Contact details</h2>
+                </VisuallyHidden>
+                <FooterList>
+                  {footerLinks.map(({ href, title, text }) => (
+                    <FooterItem key={href}>
+                      <FooterLink href={href} title={title} target="_blank">
+                        {text}
+                      </FooterLink>
+                    </FooterItem>
+                  ))}
+                </FooterList>
+              </div>
+            </Footer>
+          </DarkContainer>
+        </Main>
       </React.Fragment>
     );
   }
