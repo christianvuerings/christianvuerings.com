@@ -256,6 +256,7 @@ const Content = styled.div`
   margin: 0 auto 25px;
   max-width: 780px;
   padding: 0 20px;
+  width: 100%;
 `;
 
 class Layout extends React.Component {
@@ -279,6 +280,8 @@ class Layout extends React.Component {
         text: 'LinkedIn',
       },
     ];
+
+    console.log(title);
 
     return (
       <React.Fragment>
