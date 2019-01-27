@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 5 Useful Aliases for Mac OS X
+title: 5 Useful Bash Aliases for Mac OS X
 date: '2019-01-27'
 tags:
   - development
