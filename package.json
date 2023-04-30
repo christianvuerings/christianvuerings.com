@@ -8,9 +8,9 @@
     "url": "https://github.com/christianvuerings/christianvuerings.com/issues"
   },
   "dependencies": {
-    "@next/mdx": "^13.3.0",
+    "@next/mdx": "^13.3.2",
     "gray-matter": "^4.0.3",
-    "next": "13.3.0",
+    "next": "13.3.2",
     "next-mdx-remote": "^4.4.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -43,7 +43,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "format": "prettier --trailing-comma es5 --single-quote --write .",
-    "lint": "next lint"
+    "lint": "next lint",
+    "format": "prettier --write ."
   }
 }
