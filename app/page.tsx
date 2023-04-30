@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import BioContainer from './BioContainer';
 import styles from './page.module.css';
 import { postsMetadata } from './content';
 
