@@ -1,10 +1,11 @@
 ---
 layout: post
 title: The Importance of Failing
-date: "2011-04-11"
+date: '2011-04-11'
 tags:
-- thoughts
+  - thoughts
 ---
+
 We are afraid of all kinds of things. It's not only you and me but everyone. It's in our nature to have fear. In fact it's something that keeps us alive. If we wouldn't have fear, we wouldn't survive.
 
 Sometimes we need to overcome fear in order to succeed. One of our main fears is failing, of not being able to succeed. This is probably one the reasons why people don't want to take initiative. They don't want to be responsible when it goes wrong.

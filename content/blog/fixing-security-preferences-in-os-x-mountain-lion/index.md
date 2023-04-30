@@ -1,14 +1,14 @@
 ---
 layout: post
 title: Fixing Security Preferences in OS X Mountain Lion
-date: "2012-09-21"
+date: '2012-09-21'
 tags:
-- development
+  - development
 ---
 
 When trying to run an application, OS X gave me the following warning:
 
-[![OS X Mountain Lion Warning](./2012-09-21-osx-warning.png)](./2012-09-21-osx-warning.png)
+![OS X Mountain Lion Warning](/images/2012-09-21-osx-warning.png)
 
 > “Application name” can't be opened because it is from an unidentified developer. Your security preferences allow installation of only apps from the Mac App Store and identified developers.
 

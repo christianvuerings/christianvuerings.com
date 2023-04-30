@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Faster Ways To Do PeopleSoft Fluid UI Development
-date: "2015-04-06"
+date: '2015-04-06'
 tags:
-- development
+  - development
 ---
 
 ### PeopleSoft Fluid UI Development
@@ -19,7 +19,7 @@ In this post we'll explain 2 ways to make your workflow better & faster:
 
 Most of the times you probably prefer to not use PeopleSoft App Designer when modifying files. This will allow you to use your favorite editor and have a faster save-reload cycle.
 
-The main plug-in we'll be using is called [Tampermonkey][Tampermonkey] (Google Chrome) which allows you to load *custom CSS & JavaScript* on any page. If you're using FireFox, check out [Greasemonkey][Greasemonkey].
+The main plug-in we'll be using is called [Tampermonkey][Tampermonkey] (Google Chrome) which allows you to load _custom CSS & JavaScript_ on any page. If you're using FireFox, check out [Greasemonkey][Greasemonkey].
 
 #### Installation
 
@@ -45,7 +45,7 @@ The main plug-in we'll be using is called [Tampermonkey][Tampermonkey] (Google C
 // @grant        GM_getResourceText
 // ==/UserScript==
 
-var sis_cs = GM_getResourceText("sis_cs");
+var sis_cs = GM_getResourceText('sis_cs');
 GM_addStyle(sis_cs);
 ```
 
@@ -59,17 +59,17 @@ As soon as you're finished with your local custom CSS & JS, you should move it t
 
 Loading custom JS & CSS locally is just the first step in improving your workflow. Usually you'll also want to make sure you don't have to save code in 1 file and you'll want some other optimization steps like:
 
-* Concatenation
-* Minification
-* Autoprefixing (Browser prefixes)
-* Precompilation (SASS)
-* Opimization (Images)
+- Concatenation
+- Minification
+- Autoprefixing (Browser prefixes)
+- Precompilation (SASS)
+- Opimization (Images)
 
 Have a look at the [installation instructions](https://github.com/ucberkeley/sis-custom/blob/master/docs/installation.md) and [our other docs](https://github.com/ucberkeley/sis-custom/blob/master/README.md).
 
 #### [SIS Custom Build][siscustombuild]
 
-[![SIS Custom Workflow](./2015-04-06-sis-custom-infographic.svg)](./2015-04-06-sis-custom-infographic.svg)
+[![SIS Custom Workflow](images/2015-04-06-sis-custom-infographic.svg)](images/2015-04-06-sis-custom-infographic.svg)
 
 In order to make the lifes easier for non front-end devs, we also developed a [heroku](https://www.heroku.com/) app called [SIS Custom Build][siscustombuild].
 
@@ -77,8 +77,8 @@ This tool will automatically run the [SIS Custom][siscustom] build as soon as we
 
 When the build is complete it makes all the assets available in the following format:
 
-* [List of files](https://sis-custom-build.herokuapp.com/dist)
-* [Zip file](https://sis-custom-build.herokuapp.com/dist/files_latest.zip)
+- [List of files](https://sis-custom-build.herokuapp.com/dist)
+- [Zip file](https://sis-custom-build.herokuapp.com/dist/files_latest.zip)
 
 That way to other devs can easily see & download the latest version of the files.
 

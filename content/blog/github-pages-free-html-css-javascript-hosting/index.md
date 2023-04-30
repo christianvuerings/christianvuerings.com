@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Github Pages - Free HTML/CSS/JavaScript Hosting
-date: "2011-01-03"
+date: '2011-01-03'
 tags:
-- development
+  - development
 ---
 
 Quite recently I've started to use [github](https://github.com/) as a free hosting service for HTML, CSS and JavaScript.
@@ -12,9 +12,9 @@ The way to do this is by using [github pages](https://pages.github.com/). Normal
 
 ### Advantages
 
-* __It's free__
-* You're site is __versioned__. This means that you can always revert to previous versions and correct mistakes.
-* __It's open-source__: People can fork your code and start doing some awesome things with it themselves.
+- **It's free**
+- You're site is **versioned**. This means that you can always revert to previous versions and correct mistakes.
+- **It's open-source**: People can fork your code and start doing some awesome things with it themselves.
 
 ### My sites
 

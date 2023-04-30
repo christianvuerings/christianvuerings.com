@@ -1,10 +1,11 @@
 ---
 layout: post
 title: Managing an Open-source Project
-date: "2011-09-23"
+date: '2011-09-23'
 tags:
-- development
+  - development
 ---
+
 As some of you may know, over the last couple of months I've been working & managing a project called [jQuery Lifestream](https://github.com/christianvuerings/jquery-lifestream).
 It isn't always that easy and there are just some of the things I've learned along the way.
 

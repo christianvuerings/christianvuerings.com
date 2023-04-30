@@ -1,0 +1,5 @@
+.bioContainer {
+  display: grid;
+  grid-gap: 12px;
+  grid-template-columns: 60px 1fr;
+}

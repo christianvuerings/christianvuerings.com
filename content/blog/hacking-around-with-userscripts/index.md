@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Hacking Around With Userscripts
-date: "2011-01-02"
+date: '2011-01-02'
 tags:
-- development
+  - development
 ---
 
 ### Lately
@@ -14,7 +14,6 @@ Make a site more readable by changing the color of the text.
 Add support for keyboard shortcuts.
 Remove really annoying ads.
 Of course you could think of many more things, the list is literately endless.
-
 
 ### My scripts
 
@@ -36,9 +35,9 @@ You can find some of the other scripts I wrote and a more up to date list on my 
 
 ### Things to remember
 
-* Don't use jQuery when you can do it natively.
-Both firefox and google chrome support JavaScript quite extensively. As you'll read further on Chrome also doesn't support the @require attribute.
-* Write plenty of documentation in your code as well as on [userscripts.org](http://userscripts.org/).
+- Don't use jQuery when you can do it natively.
+  Both firefox and google chrome support JavaScript quite extensively. As you'll read further on Chrome also doesn't support the @require attribute.
+- Write plenty of documentation in your code as well as on [userscripts.org](http://userscripts.org/).
 
 ### Google Chrome compatibility issues
 
@@ -47,7 +46,6 @@ If you want to make sure that your script also runs in Google Chrome, do the fol
 #### @match attribute
 
 Next to the @include attribute, also use the [@match attribute](https://www.chromium.org/developers/design-documents/user-scripts#TOC-Match-Patterns). This will make sure that the user who install the userscript will get an appropriate message:
-
 
 #### Don't use the @require attribute.
 

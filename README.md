@@ -7,9 +7,10 @@ Forked from [gatsby-starter-blog](https://github.com/gatsbyjs/gatsby-starter-blo
 
 ### Develop locally
 
-- `yarn dev`
+- `npm install`
+- `npm run dev`
 - Go to [http://localhost:8000/](http://localhost:8000/)
 
 ### Deploy
 
-- `yarn deploy`
+- `npm run deploy`

@@ -1,19 +1,19 @@
 ---
 title: Thanks Zach for the GitHub Love
-date: "2011-03-15"
+date: '2011-03-15'
 tags:
-- chat
+  - chat
 ---
 
 Ever since my first visit to [good-tutorials.com](http://good-tutorials.com) I've been following up on what [Zach Holman](https://zachholman.com/) has been doing. He gained attention with [facelette](https://facelette.com/), and I just love his down to earth blogposts.
 
 A few days ago I was watching [his screencast](https://zachholman.com/2011/01/automating-inefficiencies/) about automating inefficiencies and was intrigued by his desktop background. I did a quick search but couldn't find the GitHub logo in any large sizes. So I decided to tweet him:
 
-![Twitter conversation with Zach Holman](./2011-03-15-twitter_conversation.png)
+![Twitter conversation with Zach Holman](/images/2011-03-15-twitter_conversation.png)
 
 A couple of hours later I got [his wallpaper](http://f.cl.ly/items/0k0q2I433M1u0M292S24/octowhite.png).
 
-[![Github Wallpaper](./2011-03-15-github_wallpaper.png)](http://f.cl.ly/items/0k0q2I433M1u0M292S24/octowhite.png)
+[![Github Wallpaper](/images/2011-03-15-github_wallpaper.png)](http://f.cl.ly/items/0k0q2I433M1u0M292S24/octowhite.png)
 
 Too be honest I considered it a long shot, but it just shows what a nice guy he is and the kind of power Twitter has.
 

@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Berkeleydir
-date: "2014-01-09"
+date: '2014-01-09'
 tags:
-- development
+  - development
 ---
 
 [Berkeleydir][berkeleydir] enables you to easily find people in the Berkeley directory. ([code][code])
@@ -12,28 +12,28 @@ tags:
 
 Currently the way to find people at UC Berkeley is to use [directory.berkeley.edu][berkeleydirectory]. This service wasn't that intuitive for me to use.
 
-* **Slow searching** - Sometimes I didn't know the spelling of a name of someone (e.g. Jon or John). This required multiple searches where you have to keep clicking the back button.
-* **Dropdown** - It requires you to select what to search for in a certain format (e.g. `Vuerings, Christian`).
-* **Non-mobile** - Since it's not responsive, using it on a mobile device was a pain.
+- **Slow searching** - Sometimes I didn't know the spelling of a name of someone (e.g. Jon or John). This required multiple searches where you have to keep clicking the back button.
+- **Dropdown** - It requires you to select what to search for in a certain format (e.g. `Vuerings, Christian`).
+- **Non-mobile** - Since it's not responsive, using it on a mobile device was a pain.
 
 ### Features
 
 Aiming for a clean and intuitive design, it adds the following features:
 
-* **Autocomplete** - Searches as soon as you start typing.
-* **Responsive** - Works well on any device and resolution.
-* **Search always available** - Instead of having to click the back button for a new search, you can use the always available search input.
-* **Search multiple properties** - Currently searches for *uid*, *name* and *email*.
+- **Autocomplete** - Searches as soon as you start typing.
+- **Responsive** - Works well on any device and resolution.
+- **Search always available** - Instead of having to click the back button for a new search, you can use the always available search input.
+- **Search multiple properties** - Currently searches for _uid_, _name_ and _email_.
 
 ### Technologies
 
-* **[Firebase][firebase]** to save the data
-* **[LDAP][ldap]** for querying users
-* **[AngularJS][angularjs]** in the front-end
-* **[Node.js][nodejs]** for crawling and exposing the API
-  * **[Async](https://github.com/caolan/async)** which made it easier to handle asynchronous functions in Node.js.
-  * **[Express](http://expressjs.com/)** a web application framework for node
-  * **[Ldap.js][ldapjs]** a LDAP library for Node.js
+- **[Firebase][firebase]** to save the data
+- **[LDAP][ldap]** for querying users
+- **[AngularJS][angularjs]** in the front-end
+- **[Node.js][nodejs]** for crawling and exposing the API
+  - **[Async](https://github.com/caolan/async)** which made it easier to handle asynchronous functions in Node.js.
+  - **[Express](http://expressjs.com/)** a web application framework for node
+  - **[Ldap.js][ldapjs]** a LDAP library for Node.js
 
 ### Challenges
 
@@ -55,9 +55,9 @@ However, connecting to LDAP with [ldapjs][ldapjs], a great LDAP library for Node
 
 As with any project, there are always improvements to be made:
 
-* **University API** - Having a RESTful API for this on [developer.berkeley.edu](https://developer.berkeley.edu/).
-* **Images** - Support for images. Already tried using [gravatar](http://gravatar.com) for this but almost no one at Berkeley has their email linked with the that service.
-* **Infinite scroll** - Currently it only shows 10 results per search.
+- **University API** - Having a RESTful API for this on [developer.berkeley.edu](https://developer.berkeley.edu/).
+- **Images** - Support for images. Already tried using [gravatar](http://gravatar.com) for this but almost no one at Berkeley has their email linked with the that service.
+- **Infinite scroll** - Currently it only shows 10 results per search.
 
 If you would like to make any changes yourself, feel free to make a pull request on [christianv/berkeleydir][code].
 

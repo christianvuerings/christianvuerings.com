@@ -1,9 +1,9 @@
 ---
 layout: post
 title: 5 Lessons Learned Using gulp.js
-date: "2014-12-29"
+date: '2014-12-29'
 tags:
-- development
+  - development
 ---
 
 Using [gulp.js][gulpjs] isn't always straightforward. Here are a couple of tips to help you out.
@@ -15,13 +15,11 @@ With [gulp.js][gulpjs] tasks don't run in the order you define them. In fact the
 If you however want run tasks in order, you can define dependencies like this:
 
 ```js
-gulp.task('one', function(cb) {
-    cb(err);
+gulp.task('one', function (cb) {
+  cb(err);
 });
 
-gulp.task('two', ['one'], function() {
-
-});
+gulp.task('two', ['one'], function () {});
 
 gulp.task('default', ['one', 'two']);
 ```
@@ -48,24 +46,25 @@ After concatenating and minifying CSS and JavaScript files, I wanted to find a w
 
 ```js
 // Make sure all the previous tasks (concatenation / minification) are run first
-gulp.task('index', ['images', 'js', 'css', 'fonts'], function() {
-    var inject = require('gulp-inject');
-    var target = gulp.src('./src/index.html');
+gulp.task('index', ['images', 'js', 'css', 'fonts'], function () {
+  var inject = require('gulp-inject');
+  var target = gulp.src('./src/index.html');
 
-    // Read = false will not read the file contents and make the task faster
-    var sources = gulp.src([paths.build.js, paths.build.css], {
-        read: false
-    });
+  // Read = false will not read the file contents and make the task faster
+  var sources = gulp.src([paths.build.js, paths.build.css], {
+    read: false,
+  });
 
-    return target
-    .pipe(inject(sources, {
-
+  return target
+    .pipe(
+      inject(sources, {
         // Do not add a root slash to the beginning of the path
         addRootSlash: false,
 
         // Remove the `public` from the path when doing the injection
-        ignorePath: 'public'
-    }))
+        ignorePath: 'public',
+      })
+    )
     .pipe(gulp.dest('public'));
 });
 ```
@@ -74,8 +73,8 @@ And this is the `html` part:
 
 ```html
 <body>
-    <!-- inject:js -->
-    <!-- endinject -->
+  <!-- inject:js -->
+  <!-- endinject -->
 </body>
 ```
 
@@ -109,37 +108,35 @@ var paths = {
 One of the most tedious parts was finding a way to make gulp work with [nodemon][nodemon] (automatically restart node) and [BrowserSync][browsersync]. The [gulpfile](https://github.com/sogko/gulp-recipes/blob/master/browser-sync-nodemon-expressjs/gulpfile.js) from [Hafiz Ismail](https://github.com/sogko) was a great start and I made some small changes.
 
 ```js
-gulp.task('nodemon', function(cb) {
+gulp.task('nodemon', function (cb) {
   var nodemon = require('gulp-nodemon');
 
   // We use this `called` variable to make sure the callback is only executed once
   var called = false;
   return nodemon({
     script: 'server.js',
-    watch: ['server.js', 'server/**/*.*']
+    watch: ['server.js', 'server/**/*.*'],
   })
-  .on('start', function onStart() {
-    if (!called) {
-      cb();
-    }
-    called = true;
-  })
-  .on('restart', function onRestart() {
-
-    // Also reload the browsers after a slight delay
-    setTimeout(function reload() {
-      browserSync.reload({
-        stream: false
-      });
-    }, 500);
-  });
+    .on('start', function onStart() {
+      if (!called) {
+        cb();
+      }
+      called = true;
+    })
+    .on('restart', function onRestart() {
+      // Also reload the browsers after a slight delay
+      setTimeout(function reload() {
+        browserSync.reload({
+          stream: false,
+        });
+      }, 500);
+    });
 });
 
 // Make sure `nodemon` is started before running `browser-sync`.
-gulp.task('browser-sync', ['index', 'nodemon'], function() {
+gulp.task('browser-sync', ['index', 'nodemon'], function () {
   var port = process.env.PORT || 5000;
   browserSync.init({
-
     // All of the following files will be watched
     files: ['public/**/*.*'],
 
@@ -150,7 +147,7 @@ gulp.task('browser-sync', ['index', 'nodemon'], function() {
     port: 4000,
 
     // Which browser should we launch?
-    browser: ['google chrome']
+    browser: ['google chrome'],
   });
 });
 ```

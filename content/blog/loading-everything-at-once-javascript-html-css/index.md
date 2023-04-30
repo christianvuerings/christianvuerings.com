@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Loading Everything at Once - HTML, CSS & JavaScript
-date: "2010-04-25"
+date: '2010-04-25'
 tags:
-- development
+  - development
 ---
 
 Some Sakai3 front-end developers had a dream:
@@ -15,7 +15,6 @@ It felt like quite a big challenge and I wondered if it would be possible from a
 ### What we need from the back-end
 
 In Nakamura (the Sakai3 back-end) we are using [Apache Sling](https://sling.apache.org/site/index.html) in combination with [Apache Jackrabbit](https://jackrabbit.apache.org/). Which means that when we go to a URL like twitter.2.json we get information back about the structure of it's contents:
-
 
 ```js
 {
@@ -114,12 +113,11 @@ The Sakai3 widget process goes a bit deeper:
 
 So instead of doing a request to an [HTML file](https://christianvuerings.github.io/everythingatonce/loaded.html), a [CSS file](https://christianvuerings.github.io/everythingatonce/css/loaded.css) and a [JavaScript file](https://christianvuerings.github.io/everythingatonce/javascript/loaded.js), we would just make one request to a [JSON file](https://christianvuerings.github.io/everythingatonce/json/widget.json).
 
-[![Doing the requests separately](./2010-04-25-perf1.png)](./2010-04-25-perf1_b.png)
+[![Doing the requests separately](/images/2010-04-25-perf1_b.png)](/images/2010-04-25-perf1_b.png)
 
 vs.
 
-[![Doing everything in one request](./2010-04-25-perf2.png)](./2010-04-25-perf2_b.png)
-
+[![Doing everything in one request](/images/2010-04-25-perf2_b.png)](/images/2010-04-25-perf2_b.png)
 
 Too be honest I got everything working quite fast (+/- 1,5 hour) but it took a bit longer to make everything cross-browser. Especially the last part, loading the JavaScript and CSS dynamically.
 
@@ -129,13 +127,14 @@ Maybe I didn't look well enough, but I actually couldn't find any native jQuery 
 
 ```js
 var head = document.getElementsByTagName('head').item(0);
-var tag = $("<link/>");
+var tag = $('<link/>');
 tag.attr(attributes);
-if(tagname === "style" && tag[0].styleSheet){
-    tag[0].styleSheet.cssText = content;
-}else{
-    tag.text(content);
+if (tagname === 'style' && tag[0].styleSheet) {
+  tag[0].styleSheet.cssText = content;
+} else {
+  tag.text(content);
 }
 head.appendChild(tag[0]);
 ```
+
 All the code that I wrote so far is pretty much WIP and in non-development ready state. For instance at the moment I load all the CSS/JavaScript files I get back from the JSON where I should only use the ones defined in the HTML. That and some other little things still need to be fixed. But those are minor things though and I definitely think I have an awesome proof of concept.
