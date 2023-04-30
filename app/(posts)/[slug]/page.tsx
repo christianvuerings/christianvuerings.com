@@ -48,7 +48,7 @@ const PostPage = async ({ params }: { params: { slug: string } }) => {
 
   const {
     content,
-    frontmatter: { title, date, tags },
+    frontmatter: { title, date },
   } = await compileMDX<Frontmatter>({
     source,
     options: { mdxOptions, parseFrontmatter: true },
@@ -77,7 +77,7 @@ const PostPage = async ({ params }: { params: { slug: string } }) => {
         <div className={styles.marginBottomTop}>
           <Link
             className={styles.twitterLink}
-            // @ts-expect-error
+            // @ts-expect-error twitter URL is not typed
             href={twitterURL}
             target="_blank"
           >

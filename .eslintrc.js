@@ -1,17 +1,10 @@
 module.exports = {
-  env: {
-    browser: true,
-    es6: true,
-  },
-  plugins: ['react'],
-  globals: {
-    graphql: false,
-  },
-  parserOptions: {
-    sourceType: 'module',
-    ecmaFeatures: {
-      experimentalObjectRestSpread: true,
-      jsx: true,
-    },
-  },
+  extends: [
+    'eslint:recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:@next/next/recommended',
+  ],
+  parser: '@typescript-eslint/parser',
+  plugins: ['@typescript-eslint'],
+  root: true,
 };

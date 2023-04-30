@@ -10,7 +10,7 @@ export default function BioContainer() {
       <div>
         Personal blog by{' '}
         <Link
-          // @ts-expect-error
+          // @ts-expect-error external link
           href="https://twitter.com/christianvuer"
         >
           Christian Vuerings
