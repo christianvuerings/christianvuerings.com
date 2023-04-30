@@ -1,9 +1,9 @@
 ---
 layout: post
 title: My 2010 Reflections
-date: "2011-01-05"
+date: '2011-01-05'
 tags:
-- chat
+  - chat
 ---
 
 The moment just after New Year is always a good time to reflect back on the previous year and set your goals for the year to come.

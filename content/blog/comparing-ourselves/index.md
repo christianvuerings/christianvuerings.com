@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Comparing Ourselves
-date: "2011-04-16"
+date: '2011-04-16'
 tags:
-- thoughts
+  - thoughts
 ---
 
 When we compare ourselves to other people, we always pick those with whom we have a connection or similarity. For instance when we look at our career, we look at the people around us, like colleagues. We usually don't compare ourselves with a far away miner in China or to Bill Gates.

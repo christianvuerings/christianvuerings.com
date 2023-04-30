@@ -1,42 +1,33 @@
 {
   "name": "christianvuerings.com",
   "private": true,
-  "description": "Random ideas & projects from Christian Vuerings",
+  "description": "Christian Vuerings is a software engineer based in California & loves to share interesting ideas and approaches to problems",
   "version": "1.0.0",
   "author": "Christian Vuerings <vueringschristian@gmail.com>",
   "bugs": {
     "url": "https://github.com/christianvuerings/christianvuerings.com/issues"
   },
   "dependencies": {
-    "babel-plugin-styled-components": "^1.10.0",
-    "gatsby": "^2.0.76",
-    "gatsby-image": "^2.0.22",
-    "gatsby-plugin-feed": "^2.0.8",
-    "gatsby-plugin-google-analytics": "^2.0.5",
-    "gatsby-plugin-manifest": "^2.0.5",
-    "gatsby-plugin-offline": "^2.0.5",
-    "gatsby-plugin-react-helmet": "^3.0.0",
-    "gatsby-plugin-sharp": "^2.0.6",
-    "gatsby-plugin-styled-components": "^3.0.4",
-    "gatsby-remark-copy-linked-files": "^2.0.5",
-    "gatsby-remark-images": "^2.0.4",
-    "gatsby-remark-prismjs": "^3.0.0",
-    "gatsby-remark-responsive-iframe": "^2.0.5",
-    "gatsby-remark-smartypants": "^2.0.5",
-    "gatsby-source-filesystem": "^2.0.2",
-    "gatsby-transformer-remark": "^2.1.6",
-    "gatsby-transformer-sharp": "^2.1.3",
-    "prismjs": "^1.15.0",
-    "react": "^16.5.1",
-    "react-dom": "^16.5.1",
-    "react-helmet": "^5.2.0",
-    "styled-components": "^4.1.3"
+    "@next/mdx": "^13.3.0",
+    "gray-matter": "^4.0.3",
+    "next": "13.3.0",
+    "next-mdx-remote": "^4.4.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "rehype-pretty-code": "^0.9.4",
+    "remark-gfm": "^3.0.1",
+    "remove-markdown": "^0.5.0",
+    "shiki": "^0.14.1"
   },
   "devDependencies": {
-    "eslint": "^4.19.1",
-    "eslint-plugin-react": "^7.11.1",
-    "gh-pages": "^2.0.1",
-    "prettier": "^1.14.2"
+    "@types/mdx": "^2.0.4",
+    "@types/node": "18.15.11",
+    "@types/react": "18.0.35",
+    "@types/remove-markdown": "^0.3.1",
+    "eslint": "8.38.0",
+    "eslint-plugin-react": "7.32.2",
+    "prettier": "2.8.7",
+    "typescript": "5.0.4"
   },
   "homepage": "https://christianvuerings.com",
   "license": "MIT",
@@ -46,14 +37,10 @@
     "url": "git+https://github.com/christianvuerings/christianvuerings.com.git"
   },
   "scripts": {
-    "build": "gatsby build",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
-    "dev": "gatsby develop",
-    "develop": "gatsby develop",
-    "fix-semi": "eslint --quiet --ignore-pattern node_modules --ignore-pattern public --parser babel-eslint --no-eslintrc --rule '{\"semi\": [2, \"never\"], \"no-extra-semi\": [2]}' --fix gatsby-node.js",
-    "format": "prettier --trailing-comma es5 --single-quote --write 'src/**/*.js' 'src/**/*.md'",
-    "lint": "eslint --ext .js,.jsx --ignore-pattern public .",
-    "start": "npm run develop",
-    "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "format": "prettier --trailing-comma es5 --single-quote --write .",
+    "lint": "eslint --ext .js,.jsx --ignore-pattern public ."
   }
 }

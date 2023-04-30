@@ -1,0 +1,23 @@
+.header {
+  background: #293139;
+}
+
+.headerContent {
+  padding: 12px 0;
+  margin: 0 auto;
+  max-width: 860px;
+}
+
+.headerLink {
+  border: none;
+  color: #fff;
+  display: block;
+  font-weight: bold;
+  font-size: 28px;
+  padding: 12px;
+  text-decoration: none;
+}
+
+.headerLink:hover {
+  text-decoration: underline;
+}

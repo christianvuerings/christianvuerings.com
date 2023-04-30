@@ -1,15 +1,15 @@
 ---
 layout: post
 title: Hub - Supercharge Git
-date: "2014-06-15"
+date: '2014-06-15'
 tags:
-- development
-- workflow
+  - development
+  - workflow
 ---
 
 If you're using [GitHub](https://github.com/) and the command line, then [hub][hub] is something for you.
 
-![Supercharge Git](./2014-06-15-supercharge-git.svg)
+![Supercharge Git](/images/2014-06-15-supercharge-git.svg)
 
 ### Why hub?
 
@@ -43,19 +43,20 @@ eval "$(hub alias -s)"
 
 ### Hightlighted Features
 
-* **clone** - Clone a remote repository
+- **clone** - Clone a remote repository
 
 ```bash
 git clone christianv
 ```
 
-* **browse** - Open the current branch in the browser
+- **browse** - Open the current branch in the browser
 
 ```bash
 git browse
 ```
 
-* **pull-request**  - Create a pull request
+- **pull-request** - Create a pull request
+
 ```bash
 git pull-request -b christianv:master -o
 # The `-o` option will open the pull request in the browser.
