@@ -1,7 +1,7 @@
 # Christian Vuerings - personal blog
 
 Source code for [http://christianvuerings.com](http://christianvuerings.com).
-Forked from [gatsby-starter-blog](https://github.com/gatsbyjs/gatsby-starter-blog).
+Built with [Next.js](https://nextjs.org/)
 
 ## Quick start
 
@@ -9,8 +9,8 @@ Forked from [gatsby-starter-blog](https://github.com/gatsbyjs/gatsby-starter-blo
 
 - `npm install`
 - `npm run dev`
-- Go to [http://localhost:8000/](http://localhost:8000/)
+- Go to [http://localhost:3000/](http://localhost:3000/)
 
 ### Deploy
 
-- `npm run deploy`
+- Push to `main` branch. Vercel will automatically deploy.
