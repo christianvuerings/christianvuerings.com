@@ -27,6 +27,7 @@
 }
 
 .post h3 {
+  margin-top: 8px;
   font-size: 28px;
 }
 
@@ -34,7 +35,8 @@
   font-size: 24px;
 }
 
-.post p {
+.post p,
+.post table {
   margin: 1.2em 0px;
 }
 
@@ -65,6 +67,21 @@
 .post blockquote {
   font-style: italic;
   padding: 0 3em;
+}
+
+.post th {
+  border: 0;
+  text-align: left;
+}
+
+.post td,
+.post th {
+  padding: 8px 20px 8px 0;
+}
+
+.post abbr {
+  border-bottom: 2px dotted;
+  text-decoration: none;
 }
 
 .hr {
