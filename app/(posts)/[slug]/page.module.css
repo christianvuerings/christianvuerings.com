@@ -84,6 +84,18 @@
   text-decoration: none;
 }
 
+.post code {
+  background: rgba(34, 34, 34, 0.14);
+  border-radius: 10000px;
+  padding: 4px 8px;
+}
+
+.post pre code {
+  background: inherit;
+  border-radius: inherit;
+  padding: inherit;
+}
+
 .hr {
   background: hsla(0, 0%, 0%, 0.2);
   border: none;
