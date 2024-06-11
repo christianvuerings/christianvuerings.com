@@ -3,9 +3,9 @@ import styles from './Footer.module.css';
 export default function Footer() {
   const footerLinks = [
     {
-      href: 'https://twitter.com/christianvuer',
-      title: `Christian's twitter page`,
-      text: 'Twitter',
+      href: 'https://x.com/christianvuer',
+      title: `Christian's x.com page`,
+      text: 'X',
     },
     {
       href: 'https://github.com/christianvuerings',
