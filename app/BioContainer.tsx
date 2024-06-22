@@ -9,12 +9,7 @@ export default function BioContainer() {
       <Image src={profileImage} alt="" width={60} height={60} />
       <div>
         Personal blog by{' '}
-        <Link
-          // @ts-expect-error external link
-          href="https://x.com/christianvuer"
-        >
-          Christian Vuerings
-        </Link>
+        <Link href="https://x.com/christianvuer">Christian Vuerings</Link>
         <br />I love to share interesting ideas.
       </div>
     </div>
